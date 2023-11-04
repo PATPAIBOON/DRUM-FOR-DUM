@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/8630762a3b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <link rel="icon" href="drum.png">
+    <title>DRUM_FOR_DUM</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        border: 0;
+        font-family: 'Gabarito', sans-serif;
+    }
+
+    .page {
+        width: 100%;
+        height: auto;
+        padding-bottom: 190px;
+        background-size: cover;
+        /*background-color: #303030;*/
+        background-image: url(img/Blackground.gif);
+    }
+
+    .drum {
+        display: flex 1;
+        justify-content: space-between;
+        margin-top: 0px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        background-color:transparent;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 30px;
+        padding-top: 30px;
+        font-size: 40px;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-top: 50px;
+    }
+
+    h4 {
+        color: #ffffff;
+        font-weight: 100;
+        margin-bottom: -10px;
+    }
+
+    p {
+        background-color: transparent;
+        margin-bottom: 20px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .line {
+        margin-top: 40px;
+        width: 100%;
+        height: 1px;
+        background-color: #ffffff;
+    }
+
+    button {
+        margin-left: 0px;
+        width: 130px;
+        height: 130px;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        background-color: rgba(22, 22, 22, 0.7);
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        margin: 20px
+    }
+
+    button:hover {
+        border: none;
+        background-color: #38d083;
+    }
+
+    .button-music {
+        margin-top: 20px;
+    }
+    title{
+        color: black;
+    }
+
+</style>
+<body>
+    <div class="page">
+        <div class="drum">
+            <center><h1>Drum for dum <i class="fa-solid fa-drum" style="color: rgb(208, 131, 131);"></i></h1></center>
+            <button class="a" id="a" data-key="a" style="border-top-right-radius: 20px; border-bottom-left-radius: 20px;" data-audio="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"><p>A</p>Brush snare</button>
+            <button class="s" id="s" data-key="s" style="border-top-right-radius: 20px; border-bottom-left-radius: 20px;" data-audio="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"><p>S</p>Tom</button>
+            <button class="d" id="d" data-key="d" style="border-top-right-radius: 20px; border-bottom-left-radius: 20px;" data-audio="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"><p>D</p>Percussion</button>
+            <button class="j" id="j" data-key="j" style="border-top-right-radius: 20px; border-bottom-left-radius: 20px;" data-audio="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"><p>F</p>Kick</button>
+            <button class="k" id="k" data-key="k" style="border-top-right-radius: 20px; border-bottom-left-radius: 20px;" data-audio="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"><p>J</p>Snare</button>
+            <button class="l" id="l" data-key="l" style="border-top-right-radius: 20px; border-bottom-left-radius: 20px;" data-audio="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"><p>K</p>Crash cymbal</button>
+        </div>
+        
+
+    <center><div class="line"> </div></center>
+
+    <center><h2>Play music for drum</h2>
+        <br>
+            <h4>fellow fellow - ดาวหางฮัลเลย์ (Halley's Comet)</h4>
+    </center>
+
+    
+    
+    <center>
+        <div class="button-music">
+            <audio id="myAudio" src="tomp3 (mp3cut.net).mp3"></audio>
+                <button style="width: 130px; height: 50px;" id="playButton"><i class="fa-solid fa-play" style="color: #ffffff;"></i>&nbsp;&nbsp;&nbsp;&nbsp; Play</button>
+                <button style="width: 130px; height: 50px;" id="pauseButton"><i class="fa-solid fa-pause" style="color: #ffffff;"></i>&nbsp;&nbsp;&nbsp;&nbsp; Pause</button>
+        </div>
+    </center>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
